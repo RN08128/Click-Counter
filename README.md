@@ -2,7 +2,7 @@
 
 ## 🚀 Funcionalidades
 
-* **Contador Dinâmico:** Um botão principal ("Click me") que incrementa e exibe a quantidade de cliques na tela em tempo real.
+* **Contador Dinâmico:** Um botão principal ("Click me") que incrementa e exibe a quantidade de cliques na tela em tempo real que pode ser resetado ao apertar espaço no teclado.
 * **Persistência com LocalStorage:** O número de cliques fica salvo no navegador do usuário. Mesmo se a página for fechada ou atualizada, o contador não zera.
 * **Alternador de Tema (Dark/Light Mode):** Um botão dedicado que altera as cores de fundo da página e do texto dinamicamente, além de atualizar o próprio texto do botão para indicar o modo atual.
 
