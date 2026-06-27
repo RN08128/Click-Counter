@@ -1,27 +1,71 @@
 @charset "UTF-8";
 
-#btn{
-    background-color: rgb(255, 86, 86);
+:root {
+    --bg-color: #f8f9fa;
+    /* Um branco levemente cinza, agride menos os olhos */
+    --text-color: #212529;
+    /* preto grafite, melhor que o preto puro */
+    --button-bg: #ff5656;
+    --button-hover: #fc3333;
+}
+
+body.dark-theme {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+}
+
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    margin: 0;
+}
+
+#btn {
+    background-color: rgb(255, 50, 50);
     color: white;
-    padding: 10px;
-    border-radius: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 9px 0px 0px rgb(170, 59, 59);
+    margin: 10px;
 }
 
-#btn:hover{
-    background-color: rgb(252, 51, 51);
+#btn:hover {
+    background-color: rgb(255, 64, 64);
 }
 
-#btn::after{
-    background-color: red;
-    z-index: -5;
-    transition: all 0.3s;
+#btn:active {
+    transform: translateY(7px);
+    box-shadow: 0px 3px 0px 0px rgb(136, 48, 48);
 }
 
-#outside{
+
+#outside {
     text-align: center;
-    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
 }
 
-#showclicks{
-    border-color: black;
+#stheme {
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#stheme:hover {
+
+    background: #4f4f4f;
+    background: linear-gradient(158deg, rgba(79, 79, 79, 0.74) 0%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 1) 100%);
+    transform: translateY(1px);
+    transition: background-color ease 1s transform ease 1s;
+    
 }

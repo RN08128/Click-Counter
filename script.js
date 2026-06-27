@@ -1,18 +1,9 @@
 let savecount = localStorage.getItem("showclicks") || 0;
 savecount = Number(savecount);
-let show = document.getElementById("showclicks").innerText = savecount;
-let btntheme = document.getElementById("stheme")
+document.getElementById("showclicks").innerText = savecount;
 
 function theme() {
-    if (btntheme.innerText == "Dark Mode") {
-        btntheme.innerText = "Light Mode"
-        document.body.style.backgroundColor = "black";
-        document.getElementById("showclicks").style.color = "white"
-    } else {
-        btntheme.innerText = "Dark Mode"
-        document.body.style.backgroundColor = "white";
-        document.getElementById("showclicks").style.color = "black"
-    }
+        document.body.classList.toggle("dark-theme")
 }
 
 function counter() {
