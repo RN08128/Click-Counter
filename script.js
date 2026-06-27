@@ -12,6 +12,12 @@ function counter() {
     localStorage.setItem("showclicks", savecount);
 }
 
+function reset(){
+    savecount = -1;
+}
+
 document.getElementById("btn").addEventListener("click", counter);
+
+document.getElementById("btn").addEventListener("keypress", reset)
 
 document.getElementById("stheme").addEventListener("click", theme);
