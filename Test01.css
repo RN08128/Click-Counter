@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+#btn{
+    background-color: rgb(255, 86, 86);
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#btn:hover{
+    background-color: rgb(252, 51, 51);
+}
+
+#btn::after{
+    background-color: red;
+    z-index: -5;
+    transition: all 0.3s;
+}
+
+#outside{
+    text-align: center;
+    margin-top: 20%;
+}
+
+#showclicks{
+    border-color: black;
+}
