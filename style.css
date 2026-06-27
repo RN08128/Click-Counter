@@ -5,8 +5,9 @@
     /* Um branco levemente cinza, agride menos os olhos */
     --text-color: #212529;
     /* preto grafite, melhor que o preto puro */
-    --button-bg: #ff5656;
-    --button-hover: #fc3333;
+    --button-bg: rgb(255, 50, 50);
+    --button-hover: rgb(255, 64, 64);
+    /*Área de variáveis para simplificar o uso das cores*/
 }
 
 body.dark-theme {
@@ -30,7 +31,7 @@ body {
 }
 
 #btn {
-    background-color: rgb(255, 50, 50);
+    background-color: var(--button-bg);
     color: white;
     padding: 20px;
     border-radius: 10px;
@@ -39,12 +40,13 @@ body {
 }
 
 #btn:hover {
-    background-color: rgb(255, 64, 64);
+    background-color: var(--button-hover);
 }
 
 #btn:active {
     transform: translateY(7px);
     box-shadow: 0px 3px 0px 0px rgb(136, 48, 48);
+    /* Efeito de botão sendo pressionado simples */
 }
 
 
@@ -62,10 +64,8 @@ body {
 }
 
 #stheme:hover {
-
     background: #4f4f4f;
     background: linear-gradient(158deg, rgba(79, 79, 79, 0.74) 0%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 1) 100%);
     transform: translateY(1px);
-    transition: background-color ease 1s transform ease 1s;
-    
+    /*Efeito gradiente no background + animação simples de deslocamento ao colocar o mouse em cima do botão*/
 }
